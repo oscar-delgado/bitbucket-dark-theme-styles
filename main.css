@@ -5,24 +5,28 @@
   --background-light: #202b36;
   --grey: #B6C2CF;
 
-  /* Bitbucket Design System VARS */
+  /* Custom Opacities */
+  --white-op: #FFFFFF22;
+  --black-op: #00000066;
+
+  /* Bitbucket Design System */
   --ds-background-accent-gray-subtlest: var(--background-light);
   --ds-background-accent-green-subtler: #17824a;
   --ds-background-accent-green-subtlest: #145232;
   --ds-background-accent-red-subtler: #832d16;
   --ds-background-accent-red-subtlest: #522114;
   --ds-background-input: var(--background-light);
-  --ds-background-input-hovered: #FFFFFF22;
+  --ds-background-input-hovered: var(--white-op);
   --ds-background-input-pressed: #666;
-  --ds-background-neutral: #FFFFFF22;
-  --ds-background-neutral-hovered: #FFFFFF22;
-  --ds-background-neutral-subtle-hovered: #FFFFFF22;
-  --ds-blanket: #00000066;
+  --ds-background-neutral: var(--white-op);
+  --ds-background-neutral-hovered: var(--white-op);
+  --ds-background-neutral-subtle-hovered: var(--white-op);
+  --ds-blanket: var(--black-op);
   --ds-border: #777;
   --ds-border-input: var(--background);
   --ds-surface: var(--background);
   --ds-surface-overlay: var(--background-light);
-  --ds-surface-raised-hovered: #FFFFFF22;
+  --ds-surface-raised-hovered: var(--white-op);
   --ds-surface-sunken: var(--background-light);
   --ds-text: var(--grey);
   --ds-text-highEmphasis: var(--grey);
@@ -38,7 +42,7 @@
   }
 }
 [data-testid="renderer-wrapper"]:hover {
-  background-color: #FFFFFF11;
+  background-color: var(--white-op);
 }
 #bitbucket-navigation > div > a {
   background-color: var(--background-light);
@@ -57,24 +61,24 @@
   }
 }
 
-/* INPUT STYLES */
+/* INPUT */
 *:has(> input) {
   background-color: transparent !important;
   border-color: var(--background-light) !important;
   color: var(--grey) !important;
 }
 
-/* CODE BLOCK STYLES */
+/* CODE BLOCK */
 .code-block {
   background-color: transparent !important;
 }
 
-/* DIALOG STYLES */
+/* DIALOGS */
 [role="dialog"] {
   background-color: var(--background);
 }
 
-/* FOLDABLE GROUP STYLES */
+/* FOLDABLE GROUP */
 [role="group"] > * {
   color: var(--grey);
 }
