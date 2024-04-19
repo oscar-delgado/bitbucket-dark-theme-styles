@@ -1,0 +1,80 @@
+:root {
+  /* Custom VARS */
+  --primary: #0052CC;
+  --background: #1D2125;
+  --background-light: #202b36;
+  --grey: #B6C2CF;
+
+  /* Bitbucket Design System VARS */
+  --ds-background-accent-gray-subtlest: var(--background-light);
+  --ds-background-accent-green-subtler: #17824a;
+  --ds-background-accent-green-subtlest: #145232;
+  --ds-background-accent-red-subtler: #832d16;
+  --ds-background-accent-red-subtlest: #522114;
+  --ds-background-input: var(--background-light);
+  --ds-background-input-hovered: #FFFFFF22;
+  --ds-background-input-pressed: #666;
+  --ds-background-neutral: #FFFFFF22;
+  --ds-background-neutral-hovered: #FFFFFF22;
+  --ds-background-neutral-subtle-hovered: #FFFFFF22;
+  --ds-blanket: #00000066;
+  --ds-border: #777;
+  --ds-border-input: var(--background);
+  --ds-surface: var(--background);
+  --ds-surface-overlay: var(--background-light);
+  --ds-surface-raised-hovered: #FFFFFF22;
+  --ds-surface-sunken: var(--background-light);
+  --ds-text: var(--grey);
+  --ds-text-highEmphasis: var(--grey);
+  --ds-text-subtle: var(--grey);
+  --ds-text-subtlest: var(--grey);
+}
+
+
+[data-testid="ContextualNavigation"] > * {
+  background-color: var(--background);
+  ::before, ::after {
+    background-color: var(--background);
+  }
+}
+[data-testid="renderer-wrapper"]:hover {
+  background-color: #FFFFFF11;
+}
+#bitbucket-navigation > div > a {
+  background-color: var(--background-light);
+  * {
+    color: var(--grey);
+    box-shadow: none;
+    border: none;
+  }
+}
+[data-testid="ContextualNavigation"] [data-testid="NavigationItem"],
+[data-testid="ContextualNavigation"] a {
+  background-color: #111 !important;
+  border: 1px solid var(--background) !important;
+  :hover {
+    color: var(--grey) !important;
+  }
+}
+
+/* INPUT STYLES */
+*:has(> input) {
+  background-color: transparent !important;
+  border-color: var(--background-light) !important;
+  color: var(--grey) !important;
+}
+
+/* CODE BLOCK STYLES */
+.code-block {
+  background-color: transparent !important;
+}
+
+/* DIALOG STYLES */
+[role="dialog"] {
+  background-color: var(--background);
+}
+
+/* FOLDABLE GROUP STYLES */
+[role="group"] > * {
+  color: var(--grey);
+}
