@@ -29,6 +29,7 @@
   --ds-surface-raised-hovered: var(--white-op);
   --ds-surface-sunken: var(--background-light);
   --ds-text: var(--grey);
+  --ds-text-disabled: var(--grey);
   --ds-text-highEmphasis: var(--grey);
   --ds-text-subtle: var(--grey);
   --ds-text-subtlest: var(--grey);
